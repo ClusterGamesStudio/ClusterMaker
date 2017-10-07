@@ -3,6 +3,8 @@ import javax.swing.JPanel;
 
 public class Var {
 
+	public static String title = "ClusterMaker";
+	public static int width = 800, height = 600;
 	public static JFrame jf1;
 	public static ContentPanel contentPane;
 	public static JPanel mainMenuePanel, editorPanel;
