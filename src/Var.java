@@ -1,8 +1,11 @@
+import java.util.HashMap;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Var {
-
+	
+	public static HashMap<String, String> languages;
 	public static JFrame jf1;
 	public static ContentPanel contentPane;
 	public static JPanel mainMenuePanel, editorPanel;
