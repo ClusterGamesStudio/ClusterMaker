@@ -2,7 +2,7 @@ import javax.swing.JFrame;
 
 public class Var {
 	
-	JFrame jf1;		
+	public static JFrame jf1;		
 
 	public Var() {
 		
