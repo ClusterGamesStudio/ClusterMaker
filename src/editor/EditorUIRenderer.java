@@ -32,4 +32,10 @@ public class EditorUIRenderer {
         return new ImageIcon(newImage);
     }
 
+    public void draw(Graphics2D graphics2D, EditorPanel.EditorTool selected) {
+        graphics2D.setColor(Color.RED);
+        graphics2D.setStroke(new BasicStroke(5));
+        graphics2D.drawRect(padding-1, tools[selected.getID()].getY()-1, iconSize+1, iconSize+1);
+    }
+
 }

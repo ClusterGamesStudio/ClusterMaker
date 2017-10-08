@@ -18,6 +18,8 @@ public class EditorPanel extends JPanel {
         Graphics2D graphics2D = (Graphics2D) g;
         graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
+        editorUIRenderer.draw(graphics2D, EditorTool.PENCIL);
+
         repaint();
     }
 
