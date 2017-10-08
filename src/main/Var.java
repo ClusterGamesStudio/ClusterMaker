@@ -1,3 +1,5 @@
+package main;
+
 import editor.EditorPanel;
 
 import java.util.HashMap;

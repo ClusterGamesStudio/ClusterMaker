@@ -1,3 +1,5 @@
+package main;
+
 public enum ContentPanel {
     MAINMENUE(0),
     EDITOR(0);

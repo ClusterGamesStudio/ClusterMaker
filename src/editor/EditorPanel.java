@@ -5,8 +5,10 @@ import java.awt.*;
 
 public class EditorPanel extends JPanel {
 
-    public EditorPanel() {
+    private EditorUIRenderer editorUIRenderer;
 
+    public EditorPanel() {
+        this.editorUIRenderer = new EditorUIRenderer();
     }
 
     @Override
@@ -14,7 +16,14 @@ public class EditorPanel extends JPanel {
         super.paintComponent(g);
         Graphics2D graphics2D = (Graphics2D) g;
         graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        editorUIRenderer.draw(graphics2D);
 
         repaint();
+    }
+
+    public enum EditorTool {
+        PENCIL,
+        ERASER,
+        FILL
     }
 }
