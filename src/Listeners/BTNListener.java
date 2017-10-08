@@ -1,7 +1,10 @@
-package main;
+package Listeners;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import Panels.MainMenue;
+import main.Var;
 
 public class BTNListener implements ActionListener {
 	@Override

@@ -1,4 +1,4 @@
-package main;
+package Panels;
 
 public enum ContentPanel {
     MAINMENUE(0),
