@@ -6,6 +6,7 @@ public class BTNListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 		if (e.getSource().equals(MainMenue.btnEditor)) {
+			Var.mainMenuePanel.setVisible(false);
 			Var.jf1.setContentPane(Var.editorPanel);
 		} else {
 			System.out.println(e.getClass());
