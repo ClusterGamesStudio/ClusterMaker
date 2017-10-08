@@ -7,6 +7,9 @@ public class MainMenue extends JPanel{
 	public MainMenue(){
 		btnEditor = new JButton("Editor");
 		btnEditor.setBounds(Var.width/2-100, 200, 200, 50);
+		btnEditor.setVisible(true);
+		
+		add(btnEditor);
 		
 	}
 }
