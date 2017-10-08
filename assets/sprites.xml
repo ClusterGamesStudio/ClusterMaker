@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="sprites.png">
+	<SubTexture name="robboter.png" x="0" y="0" width="25" height="31"/>
+	<SubTexture name="robboter_hinten_.png" x="0" y="33" width="25" height="31"/>
+	<SubTexture name="robboter_von_der_seite_lauft_nach_hinten.png" x="12" y="66" width="10" height="32"/>
+	<SubTexture name="robboter_von_der_seite_lauft_nach_vorne.png" x="0" y="66" width="10" height="32"/>
+</TextureAtlas>
