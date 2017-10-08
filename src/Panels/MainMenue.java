@@ -1,7 +1,10 @@
-package main;
+package Panels;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
+import Listeners.BTNListener;
+import main.Var;
 
 public class MainMenue extends JPanel{
 	public static JButton btnEditor, btnExit;

@@ -7,7 +7,13 @@ import java.util.HashMap;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import Panels.ContentPanel;
+import Panels.GamePanel;
+import Panels.MainMenue;
+
 public class Var {
+	
+	public static boolean goLeft, goRight, sneak, jump;
 	
 	public static HashMap<String, String> languages;
 
@@ -16,7 +22,7 @@ public class Var {
 	
 	public static JFrame jf1;
 	public static ContentPanel contentPane;
-	public static JPanel mainMenuePanel, editorPanel;
+	public static JPanel mainMenuePanel, editorPanel, gamePanel;
 
 	public Var() {
 
@@ -25,6 +31,7 @@ public class Var {
 		// Panels 
 		mainMenuePanel = new MainMenue();
 		editorPanel = new EditorPanel();
+		gamePanel = new GamePanel();
 		
 		jf1 = new Frame();
 		
