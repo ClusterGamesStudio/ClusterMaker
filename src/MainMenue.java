@@ -2,7 +2,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class MainMenue extends JPanel{
-	private JButton btnEditor, btnExit;
+	public static JButton btnEditor, btnExit;
 	
 	public MainMenue(){
 		setLayout(null);
