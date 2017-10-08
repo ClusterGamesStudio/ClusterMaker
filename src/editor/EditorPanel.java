@@ -8,7 +8,8 @@ public class EditorPanel extends JPanel {
     private EditorUIRenderer editorUIRenderer;
 
     public EditorPanel() {
-        this.editorUIRenderer = new EditorUIRenderer();
+        this.setLayout(null);
+        this.editorUIRenderer = new EditorUIRenderer(this);
     }
 
     @Override
@@ -16,14 +17,21 @@ public class EditorPanel extends JPanel {
         super.paintComponent(g);
         Graphics2D graphics2D = (Graphics2D) g;
         graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        editorUIRenderer.draw(graphics2D);
 
         repaint();
     }
 
     public enum EditorTool {
-        PENCIL,
-        ERASER,
-        FILL
+        PENCIL(0),
+        ERASER(1),
+        FILL(2);
+
+        int id;
+        EditorTool(int id) {
+            this.id = id;
+        }
+        public int getID() {
+            return id;
+        }
     }
 }
