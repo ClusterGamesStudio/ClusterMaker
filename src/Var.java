@@ -8,7 +8,7 @@ public class Var {
 	public static HashMap<String, String> languages;
 
 	public static String title = "ClusterMaker";
-	public static int width = 800, height = 600;
+	public static int width = 1200, height = 675;
 	
 	public static JFrame jf1;
 	public static ContentPanel contentPane;
