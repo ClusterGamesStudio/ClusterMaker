@@ -8,6 +8,7 @@ public class Frame extends JFrame{
 		setLayout(null);
 		setLocationRelativeTo(null);
 		setVisible(true);
+		setResizable(false);
 	}
 
 }
