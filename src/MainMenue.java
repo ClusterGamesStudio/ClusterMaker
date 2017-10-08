@@ -11,6 +11,5 @@ public class MainMenue extends JPanel{
 		btnEditor.setVisible(true);
 		
 		add(btnEditor);
-		
 	}
 }

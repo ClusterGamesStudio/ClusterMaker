@@ -1,3 +1,5 @@
+import editor.EditorPanel;
+
 import java.util.HashMap;
 
 import javax.swing.JFrame;
