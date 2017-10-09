@@ -24,7 +24,7 @@ public abstract class Block {
         this.location = location;
     }
 
-    public void setLocation(int x, int y) {
+    public void setLocation(Double x, Double y) {
         setLocation(new Vector2(x, y));
     }
 }
