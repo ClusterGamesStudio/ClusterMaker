@@ -3,7 +3,6 @@ package Listeners;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import javafx.scene.input.KeyCode;
 import main.Var;
 
 public class Keylistener implements KeyListener{

@@ -25,16 +25,38 @@ public class EditorPanel extends JPanel {
     }
 
     public enum EditorTool {
-        PENCIL(0),
-        ERASER(1),
-        FILL(2);
+        PENCIL(0, "assets/dirt ohne grass.jpg"),
+        ERASER(1, "assets/dirt mit schatten.jpg"),
+        FILL(2, "assets/dirt ecke links mit schatten.jpg");
 
         int id;
-        EditorTool(int id) {
+        String imagePath;
+        EditorTool(int id, String imagePath) {
             this.id = id;
+            this.imagePath = imagePath;
         }
+
+        public String getImagePath() {
+            return imagePath;
+        }
+
         public int getID() {
             return id;
         }
+
+        public static EditorTool getNameByCode(int code){
+            for(EditorTool e : EditorTool.values()){
+                if(code == e.id) return e;
+            }
+            return null;
+        }
+
+        public static String getImagePathByCode(int code){
+            for(EditorTool e : EditorTool.values()){
+                if(code == e.id) return e.getImagePath();
+            }
+            return null;
+        }
+
     }
 }
