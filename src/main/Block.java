@@ -7,7 +7,7 @@ public abstract class Block {
     private Tile tile;
     private Vector2 location;
 
-    public Block(Tile tile, Vector2 location) {
+    public Block(Tile tile, Vector2 location, Double blockID) {
         this.tile = tile;
         this.location = location;
     }
