@@ -37,5 +37,9 @@ public class EditorUIRenderer {
         graphics2D.setStroke(new BasicStroke(5));
         graphics2D.drawRect(padding-1, tools[selected.getID()].getY()-1, iconSize+1, iconSize+1);
     }
-
+    
+    public void background(Graphics2D graphics2D){
+    	graphics2D.setColor(Color.BLUE);
+    }
 }
+
