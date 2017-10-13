@@ -20,7 +20,7 @@ public class EditorUIRenderer {
 
 
         for(int i = 0; i<toolLength; i++) {
-            tools[i] = new JLabel(getScaledIcon("coins animation1.jpeg", iconSize, iconSize));
+            tools[i] = new JLabel(getScaledIcon(EditorPanel.EditorTool.getImagePathByCode(i), iconSize, iconSize));
             tools[i].setBounds(padding,(i*padding+i*iconSize)+(toolLength*padding+toolLength*iconSize)/2+padding, iconSize, iconSize);
             panel.add(tools[i]);
         }

@@ -1,16 +1,16 @@
 package util;
 
 public class Vector3 {
-	public static Double X, Y, Z;
-	public Vector3(Double X, Double Y, Double Z){
-		Vector3.X = X;
-		Vector3.Y = Y;
-		Vector3.Z = Z;
+	public Double x, y, z;
+	public Vector3(Double x, Double y, Double z){
+		this.x = x;
+		this.y = y;
+		this.z = z;
 	}
 	
 	public Vector3(){
-		Vector3.X = 0.0;
-		Vector3.Y = 0.0;
-		Vector3.Z = 0.0;
+		this.x = 0.0;
+		this.y = 0.0;
+		this.z = 0.0;
 	}
 }
